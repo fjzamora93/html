@@ -1,5 +1,11 @@
 
+import sys
+
+
+print ("Bienvenido a la Calculadora de Javi, donde puedes \n SUMAR (+) \n RESTAR (-) \n MULTIPLICAR (*) \n DIVIDIR (/) \n POTENCIA (^) \n PORCENTAJE (%) \n Pero de momento comencemos introduciendo el valor de X ")
+
 def calculadora():
+
 
     while True:
         try: 
@@ -13,29 +19,18 @@ def calculadora():
 
     while True:
         try:
-            if operador == "+": 
-                resultado= x+y 
+            if operador.lower() == "+" or "suma" in operador.lower(): 
+                resultado= suma (x,y) 
             elif operador == "-": 
-                resultado= x-y 
+                resultado= resta (x,y) 
             elif operador == "*": 
-                resultado= x*y 
+                resultado= multiplicacion (x,y) 
             elif operador == "/" and y!=0: 
-                resultado= x/y 
-                
-
+                resultado= division (x,y)
             elif operador == "^":
-                resultado= x
-                if y<0:       
-                    for _ in range (-y-1): 
-                        resultado=(x*resultado)
-                    resultado= 1/resultado
-                else:   
-                    for _ in range (y-1):
-                        resultado=x*resultado
-                
+                resultado= potencia (x,y)  
             elif operador == "%":
-                resultado= x*y/100
-
+                resultado= porcentaje (x,y)
             else:
                 print("¡Algo salió mal! Prueba de nuevo: (+, -, *, /, %, ^)")
 
@@ -53,7 +48,32 @@ def calculadora():
             miau()
 
 
+def suma (x,y):
+    return x+y
+def resta (x,y):
+    return x-y
+def multiplicacion (x,y):
+    return x*y
+def division (x,y):
+    return x/y
+def porcentaje (x,y):
+    return x*y/100
+def potencia (x,y):
+    if y < 0:
+        x = 1 / x
+        y = -y
+    resultado = 1
+    
+    for _ in range(y):
+        resultado *= x
+    return resultado
+
+
 def miau():
+    print("    RESET")
+    calculadora()
+
+calculadora()
     print("    ¿Qué has tocado ya? Empecemos de nuevo...")
     calculadora()
 
