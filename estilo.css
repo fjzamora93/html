@@ -1,0 +1,57 @@
+/* Margen para todo el body */
+body {
+    margin: 20px; /* Define el margen de 20 píxeles en los cuatro lados (arriba, derecha, abajo, izquierda) */
+}
+
+/* Estilo para botones (el normal y cuando te pones encima) */
+button{
+    width:200px;
+    height:50px;
+    font-size:24px;
+    background-color:green;
+}
+
+button:hover {
+    background-color: orange;
+
+}
+
+
+/* Estilo para párrafos */
+p {
+    font-family: Arial, sans-serif; /* Usará Arial como primera opción y cualquier fuente sans-serif como alternativa */
+    margin-bottom: 10px; /* Agrega espacio en la parte inferior del párrafo */
+}
+
+/* Estilo para la tabla con padding en las celdas */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 2px;
+    width: 100%; /* Esto hará que la tabla ocupe el 100% del contenedor */
+    max-width: 800px; 
+    table-layout: fixed; /* Establece un ancho uniforme para las columnas */
+}
+
+/* Estilo para el h2 con fuente Papyrus, tono burdeos y aumento de tamaño */
+h2 {
+    font-family: "Papyrus", sans-serif;
+    color: #800000; /* Burdeos */
+    font-size: 2em; /* Aumento de 2px */
+}
+
+/* Estilo para el h3 con fuente Perpetua */
+h3 {
+    font-family: "Perpetua", serif;
+}
+
+/* Estilo para el formulario con un marco */
+form {
+    border: 1px solid #000;
+    padding: 10px;
+    width: 600px;
+}

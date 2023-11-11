@@ -1,0 +1,23 @@
+/* Aquí vamos a aprender a hacer un diseño responsive */
+
+/*Combinadores: 
+   
+
+hay otros combinadores como:
++ (selecciona el siguiente elemento adyacente). 
+> que selecciona lo que tenga la etiqueta o clase al lado ancho del símbolo .
+~ (selecciona todos los elementos hermanos que siguen al elemento).
+""(espacio) que se utiliza para seleccionar elementos descendientes.
+
+
+        /* Aplicamos el container al div */
+        #container>div {
+            background-color: springgreen;
+            font-size: 20px;
+            margin: 20px;
+            padding: 20px;
+            width: 200px;
+        }
+
+/*Parece que hay algunos estilos que están prefabricados. Dejo aquí el enlace:
+https://getbootstrap.com/docs/4.1/components/alerts/ */

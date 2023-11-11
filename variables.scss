@@ -1,0 +1,33 @@
+/*AHORA ESTAMOS SCSS, no en el CSS normal 
+Estos documentos no se entienden directamente en HTML, así que
+deberíamos instalar un programa apropiado de sass en el ordenador 
+
+Habrá que introducir el siguietne comando en la termianl,
+aunque previamente habrá que averiguar cómo funciona y por qué no va:
+
+sass variables.scss:variables.css
+*/
+
+
+/*En SCSS también existen el uso de variables,
+que es básicamente la capacidad de cambiar únicamente un aspecto de nuestro estilo
+asignándole el valor de la variable que hayamos definido.
+
+Supongamos que hemos aplicado X estilo a ciertos elemento,
+pues podemos cambiarlos todos a partir de la variable y actuaríamos más rápido
+esto es especialmente útil si esa variable están en una docena de sitios a la vez. */
+
+$color: red;
+
+ul {
+    font-size:14px;
+    color:$color;
+}
+
+ol {
+    font: size 18px;
+    color: $color;
+}
+
+
+/*SASS tiene muchas otras funciones bastantes útiles, como la de inheritance, entre otras */

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Página HTML</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <style>
+        #ejemplo, #sample {color:blue;
+        }
+    </style>
+    <style>
+        .sample{
+            color:red;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>Cabecera de Mi Página</h2>
+    <br>
+    <button>¡Haz click aquí!</button>
+    <h3 id="ejemplo">Esta cabecera tendrá una ID especial</h3>
+    <h4 id="sample">Esta cabecera también tiene otra ID</h4>
+
+    <h3 class=sample>Si vamos a customizar varios, mejor darle una class</h3>
+   
+
+    <br>
+    <p>Este es un párrafo de texto falso en el cuerpo de la página. Puedes reemplazarlo con tu propio contenido.</p>
+    <br> <!-- br es como se hace el salto de linea. -->
+    <table border="1">
+        <tr>
+            <th>Cabecera de columna 1</th>
+            <th>Cabecera de columna 2</th>
+            <th>Cabecera de columna 3</th>
+            <th>Cabecera de columna 4</th>
+            <th>Cabecera de columna 5</th>
+        </tr>
+        <tr>
+            <td>Dato 1</td>
+            <td>Dato 2</td>
+            <td>Dato 3</td>
+            <td>Dato 4</td>
+            <td>Dato 5</td>
+        </tr>
+        <tr>
+            <td>Dato 7</td>
+            <td>Dato 8</td>
+            <td>Dato 9</td>
+            <td>Dato 10</td>
+            <td>Dato 11</td>
+        </tr>
+        <tr>
+            <td>Dato 13</td>
+            <td>Dato 14</td>
+            <td>Dato 15</td>
+            <td>Dato 16</td>
+            <td>Dato 17</td>
+        </tr>
+    </table>
+
+    <br> 
+
+    <div>
+        <em>Texto falso en cursiva dentro de un div.</em>
+    </div>
+    
+    <br> 
+
+    <img src="images\muestra.JPG" alt="Muestra de imagen " style="max-width: 500px">
+    
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4
+            <ul>
+                <li>Elemento anidado 1</li>
+                <li>Elemento anidado 2</li>
+                <li>Elemento anidado 3</li>
+                <li>Elemento anidado 4</li>
+                <li>Elemento anidado 5</li>
+            </ul>
+        </li>
+    </ol>
+    
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+        
+        <label for "comentario">Comentario:</label><br>
+        <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+    
+    <a href="https://www.google.com" target="_blank">Enlace a Google</a>
+    
+    <p>Este es otro párrafo de texto falso al final de la página.</p>
+</body>
+</html>
